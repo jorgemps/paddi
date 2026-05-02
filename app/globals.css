@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paddi-teal: #1aa7a1;
+  --paddi-navy: #07111f;
+  --paddi-mint: #e5fbf7;
+  --paddi-paper: #f7fafc;
+}
+html, body { min-height: 100%; }
+body {
+  background:
+    radial-gradient(circle at 15% 10%, rgba(66,199,193,.18), transparent 28%),
+    radial-gradient(circle at 90% 0%, rgba(251,191,36,.12), transparent 22%),
+    linear-gradient(180deg, #f8fcfb 0%, #f7fafc 55%, #f9fafb 100%);
+  color: #07111f;
+}
+* { box-sizing: border-box; }
+::-webkit-scrollbar { height: 10px; width: 10px; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 99px; }
+.paddi-card {
+  background: rgba(255,255,255,.86);
+  backdrop-filter: blur(14px);
+}
+.paddi-gradient {
+  background:
+    radial-gradient(circle at top left, rgba(26,167,161,.24), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(245,158,11,.15), transparent 28%),
+    linear-gradient(135deg, #ffffff 0%, #f7fffd 100%);
+}

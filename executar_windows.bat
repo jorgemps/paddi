@@ -1,0 +1,9 @@
+@echo off
+cd /d %~dp0
+echo Limpando cache npm...
+npm cache clean --force
+echo Instalando dependencias...
+npm install
+echo Iniciando ClinOS PADDI...
+npm run dev
+pause
